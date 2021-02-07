@@ -1,0 +1,40 @@
+.item{
+    background: red;
+    padding: 20px;
+    margin: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+
+.flip-enter{
+    transform: rotateY(180deg);
+  }
+  .flip-enter-active{
+    animation: flip-in 2000ms ease-out forwards;
+  }
+  .flip-leave{
+    transform: rotateY(0deg);
+  }
+  .flip-leave-active{
+    animation: flip-out 3000ms ease-out forwards;
+  }
+  @keyframes flip-in{
+    from{
+      transform: rotateY(180deg);
+    }
+    to{
+      transform: rotateY(0deg);
+    }
+  }
+  @keyframes flip-out{
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(90deg);
+    }
+  }
